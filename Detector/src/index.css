@@ -1,0 +1,89 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+  color: #333;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.app-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Textarea */
+.news-input {
+  width: 100%;
+  height: 200px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.news-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Button */
+.check-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.check-button:hover {
+  background-color: #0056b3;
+}
+
+/* Result */
+.result {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* Dynamic colors for result */
+.result.real {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.result.fake {
+  background-color: #f8d7da;
+  color: #721c24;
+}
